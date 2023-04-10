@@ -29,7 +29,7 @@
             </ul>
           </li>
           <li><a href="{{route('company')}}">COMPANY</a></li>
-          <li><a href="{{route('frontend.products')}}">PRODUCTS</a></li>
+          <!-- <li><a href="{{route('frontend.products')}}">PRODUCTS</a></li> -->
           <li><a href="{{route('traning')}}">TRANING</a></li>
           <li><a href="{{route('gallery')}}">GALLERY</a></li>
           <li><a href="{{route('client')}}">CLIENTS</a></li>
