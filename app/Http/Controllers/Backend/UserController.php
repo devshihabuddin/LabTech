@@ -17,7 +17,7 @@ class UserController extends Controller
     public function index()
     {
         $users = User::orderBy('id','DESC')->get();
-        return view('Backend.user.index',compact('users'));
+        return view('backend.user.index',compact('users'));
     }
 
     /**
@@ -27,7 +27,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('Backend.user.create');
+        return view('backend.user.create');
     }
 
     /**
@@ -79,7 +79,7 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = User::find($id);
-        return view('Backend.user.edit',compact('user'));
+        return view('backend.user.edit',compact('user'));
     }
 
     /**
