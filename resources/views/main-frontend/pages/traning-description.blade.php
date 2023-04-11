@@ -6,9 +6,9 @@
       <div class="container">
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>products</li>
+          <li>Traning</li>
         </ol>
-        <h2>Products</h2>
+        <h2>Traning</h2>
       </div>
     </section><!-- End Breadcrumbs -->
 
