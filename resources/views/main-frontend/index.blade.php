@@ -28,7 +28,7 @@
       </div>
     </div>
   </section><!-- End Hero -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio" style="padding: 0 0 20px 0;">
       <div class="container">
           <div class="row portfolio-container">
            @foreach($categories as $category)
@@ -47,7 +47,7 @@
           </div>
       </div>
     </section>
-    <section id="product-slide" class="product-slide">
+    <section id="product-slide" class="product-slide" style="background-color: #f3f3f3!important; padding-top: 30px;">
       <div class="container">
         <div class="section-title">
           <h2>Products</h2>

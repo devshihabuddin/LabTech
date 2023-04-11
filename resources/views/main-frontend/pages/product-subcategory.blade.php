@@ -22,7 +22,8 @@
                   <strong>Showing </strong> <span> 1-9</span> <span> of </span> <span class="total-products"> 14 </span>
                   <span>results</span>
                 </div> -->
-                <div class="float-end navbar">
+                <div class="float-end navbar" style="border: 1px solid #ededed;
+    padding-right: 20px;">
                   <ul>
                   <li class="dropdown"><a href="#"><span>Products Sorting</span> <i class="bi bi-chevron-down"></i></a>
                       <ul>
@@ -40,7 +41,7 @@
                 <div class="col-lg-4 col-md-6 mb-2">             
                     <div class="card">
                       <div>
-                        <img src="/images/product/{{$product->image}}" class="w-100" />
+                        <img src="/images/product/{{$product->image}}" class="w-100 h-210" />
                       </div>
                       <div class="card-body">
                         <h5><strong>{{$product->title}}</strong></h5>
@@ -59,12 +60,15 @@
           <div class="col-lg-4">
                 <div class="sidebar">
                 <div class="sidebar-item search-form">
-                    <form action="{{url('/search')}}" type="get">
-                      <input type="search" name="query" placeholder="Search Product Here..">
+                    <form action="{{url('/search')}}" type="get" style="border-radius: 7px; padding: 3px 10px;">
+                      <input type="search" name="query" placeholder="Search Product Here.." class="form-control">
                       <button type="submit"><i class="bi bi-search"></i></button>
                     </form>
                   </div>
-                    <h3 class="sidebar-title">Filter by Categories</h3>
+                    <h3 class="sidebar-title" style="
+    background-color: #e96b56;
+    color: #fff;
+    padding: 10px;">Filter by Categories</h3>
                     <div class="sidebar-item categories">
                         <ul>
                         @foreach($categories as $category)
@@ -75,7 +79,10 @@
                         @endforeach
                         </ul>
                     </div>
-                    <h3 class="sidebar-title">Recent Products</h3>
+                    <h3 class="sidebar-title" style="
+    background-color: #e96b56;
+    color: #fff;
+    padding: 10px;">Recent Products</h3>
                     <div class="sidebar-item recent-posts">
                         @foreach($latest_products as $product)
                         <div class="post-item clearfix" class="entry-img">
