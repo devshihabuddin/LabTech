@@ -47,7 +47,7 @@
           </div>
       </div>
     </section>
-    <section id="product-slide" class="product-slide" style="background-color: #f3f3f3!important; padding-top: 30px;">
+    <section id="product-slide" class="product-slide" style="background-color: #f3f3f3!important; padding-top: 30px; padding-bottom: 30px;">
       <div class="container">
         <div class="section-title">
           <h2>Products</h2>
