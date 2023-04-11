@@ -27,7 +27,7 @@
                   <li class="dropdown"><a href="#"><span>Products Sorting</span> <i class="bi bi-chevron-down"></i></a>
                       <ul>
                           @foreach($categories as $category)
-                          <li><a href="{{route('product.category',$category->slug)}}">{{$category->category_name}}</a></li>
+                          <li><a href="{{route('product.category',$category->slug)}}">{{strtoupper($category->category_name)}}</a></li>
                           @endforeach
                       </ul>
                   </li>
@@ -43,7 +43,7 @@
                         <img src="/images/product/{{$product->image}}" class="w-100" />
                       </div>
                       <div class="card-body">
-                        <h5>{{$product->title}}</h5>
+                        <h5><strong>{{$product->title}}</strong></h5>
                         <h6 class=""><b>Brand :</b> <span class="brand">{{$product->brand}}</span></h6>
                         <h6 class=""><b>Model :</b> <span class="Model">{{$product->model}}</span></h6>
                         <p class=""><span class="cuntry">{{$product->made_by}}</span></p>
@@ -60,7 +60,7 @@
                 <div class="sidebar">
                 <div class="sidebar-item search-form">
                     <form action="{{url('/search')}}" type="get">
-                      <input type="search" name="query" placeholder="Search product Here.." class="form-control">
+                      <input type="search" name="query" placeholder="Search Product Here.." class="form-control">
                       <button type="submit"><i class="bi bi-search"></i></button>
                     </form>
                   </div>
@@ -69,7 +69,7 @@
                         <ul>
                         @foreach($categories as $category)
                             <li>
-                            <a href="{{route('product.category',$category->slug)}}">{{$category->category_name}}</a>
+                            <a href="{{route('product.category',$category->slug)}}">{{strtoupper($category->category_name)}}</a>
                             ({{$category->products->count()}})
                             </li>
                         @endforeach
@@ -80,7 +80,7 @@
                         @foreach($latest_products as $product)
                         <div class="post-item clearfix" class="entry-img">
                         <img src="/images/product/{{$product->image}}" alt="img" class="img-fluid">
-                        <h4><a href="blog-single.html">{{$product->title}}</a></h4>
+                        <h4><a href="blog-single.html"><strong>{{$product->title}}</strong></a></h4>
                         </div>
                         @endforeach
                     </div>

@@ -38,7 +38,7 @@
                 <div class="portfolio-info">
                   
                   <div class="portfolio-links">
-                    <a href="{{route('product.category',$category->slug)}}" title="More Details">{{$category->category_name}}</a>
+                    <a href="{{route('product.category',$category->slug)}}" title="More Details">{{strtoupper($category->category_name)}}</a>
                   </div>
                 </div>
               </div>

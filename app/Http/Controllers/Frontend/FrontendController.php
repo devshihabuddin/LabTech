@@ -19,7 +19,7 @@ class FrontendController extends Controller
 {
     public function index(){
         $abouts     = About::latest()->get();
-        $categories = Category::where(['status'=>'active'])->orderBy('id','DESC')->limit('8')->get();
+        $categories = Category::where(['status'=>'active'])->get();
         $clients    = Client::where(['status'=>'active'])->orderBy('id','DESC')->limit('5')->get();
         $products = Product::latest()->limit('4')->get();
         

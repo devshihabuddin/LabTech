@@ -18,10 +18,10 @@
               @php
                 $subcategories = DB::table('subcategories')->where('category_id',$cat->id)->get();
               @endphp
-              <li class="dropdown"><a href="{{route('product.category',$cat->slug)}}"><span>{{$cat->category_name}}</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="{{route('product.category',$cat->slug)}}"><span>{{strtoupper($cat->category_name)}}</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   @foreach($subcategories as $sub)
-                  <li><a href="{{route('product.subcategory',$sub->id)}}">{{$sub->subcategory_name}}</a></li>
+                  <li><a href="{{route('product.subcategory',$sub->id)}}">{{strtoupper($sub->subcategory_name)}}</a></li>
                   @endforeach
                 </ul>
               </li>
