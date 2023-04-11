@@ -105,7 +105,8 @@
     <!-- End About Section -->
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
+    <section id="clients" class="clients" style="background-color: #f3f3f3!important;
+  padding-top: 30px;">
       <div class="container">
         <div class="section-title">
           <h2>Clients</h2>

@@ -21,13 +21,13 @@
         <div class="row">
           @foreach($tranings as $traning)
           <div class="col-lg-4 col-md-4 mb-3">
-            <a href="#">
+            <a href="{{route('traning.description',$traning->slug)}}">
               <div class="zoom">
                 <div class="">
                   <img src="/images/traning/{{$traning->image}}" class="w-100" />
                 </div>
                 <div class="p-3">
-                  <h4><a href="{{route('traning.description',$traning->slug)}}">{{$traning->title}}</a></h4>
+                  <h4><a href="">{{$traning->title}}</a></h4>
                 </div>
               </div>
             </a>

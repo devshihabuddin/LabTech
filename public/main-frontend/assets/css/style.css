@@ -567,7 +567,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 0 0 80px 0;
+  padding: 0 0 20px 0;
 }
 
 .section-bg {
@@ -695,7 +695,15 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-
+#product-slide {
+  background-color: #f3f3f3!important;
+  }
+  #product-slide .section-title {
+    padding-bottom: 0px;
+ }
+ #about{
+  padding-top: 30px;
+}
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -804,6 +812,11 @@ section {
 /*--------------------------------------------------------------
 # Our Clients
 --------------------------------------------------------------*/
+/* #clients{
+  background-color: #f3f3f3!important;
+  padding-top: 30px;
+  } */
+
 .clients .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -1530,6 +1543,19 @@ section {
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
+#blog .float-end{
+  border: 1px solid #ededed;
+  padding-right: 20px;
+}
+#blog .card img{
+height: 210px;
+}
+#blog button a{
+color: #fff;
+}
+
+
+
 .blog {
   padding: 40px 0 20px 0;
 }
@@ -1893,11 +1919,12 @@ section {
 }
 
 .blog .sidebar .sidebar-title {
+  background-color: #e96b56;
+  color: #fff;
+  padding: 10px;
   font-size: 20px;
   font-weight: 700;
-  padding: 0 0 0 0;
   margin: 0 0 15px 0;
-  color: #545454;
   position: relative;
 }
 
@@ -1908,7 +1935,8 @@ section {
 .blog .sidebar .search-form form {
   background: #fff;
   border: 1px solid #ddd;
-  padding: 3px 10px;
+  padding: 0px 0px;
+  border-radius: 7px;
   position: relative;
 }
 

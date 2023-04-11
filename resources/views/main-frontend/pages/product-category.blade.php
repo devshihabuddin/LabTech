@@ -47,7 +47,7 @@
                         <h6 class=""><b>Brand :</b> <span class="brand">{{$product->brand}}</span></h6>
                         <h6 class=""><b>Model :</b> <span class="Model">{{$product->model}}</span></h6>
                         <p class=""><span class="cuntry">{{$product->made_by}}</span></p>
-                        <button class="btn btn-info"><a target="_blank" href="{{url('/view',$product->id)}}">view details</a></button>
+                        <button class="btn btn-primary"><a target="_blank" href="{{url('/view',$product->id)}}">View Details</a></button>
                       </div>
                     </div>                   
                 </div>               
@@ -60,7 +60,7 @@
                 <div class="sidebar">
                 <div class="sidebar-item search-form">
                     <form action="{{url('/search')}}" type="get">
-                      <input type="search" name="query" placeholder="Search product Here..">
+                      <input type="search" name="query" placeholder="Search product Here.." class="form-control">
                       <button type="submit"><i class="bi bi-search"></i></button>
                     </form>
                   </div>
