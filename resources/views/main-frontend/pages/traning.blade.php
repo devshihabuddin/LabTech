@@ -27,7 +27,7 @@
                   <img src="/images/traning/{{$traning->image}}" class="w-100" />
                 </div>
                 <div class="p-3">
-                  <h4><a href="">{{$traning->title}}</a></h4>
+                  <h4><a href="{{route('traning.description',$traning->slug)}}">{{$traning->title}}</a></h4>
                 </div>
               </div>
             </a>
@@ -37,10 +37,6 @@
 
       </div>
     </section><!-- End training Section -->
-
   </main><!-- End #main -->
 @endsection
 
-@section('js')
-
-@endsection

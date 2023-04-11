@@ -65,10 +65,7 @@
                 <button type="submit"><i class="bi bi-search"></i></button>
               </form>
             </div>
-            <h3 class="sidebar-title" style="
-    background-color: #e96b56;
-    color: #fff;
-    padding: 10px;">Filter by Categories</h3>
+            <h3 class="sidebar-title" style="background-color: #e96b56; color: #fff; padding: 10px;">Filter by Categories</h3>
             <div class="sidebar-item categories">
               <ul>
                 @foreach($categories as $category)

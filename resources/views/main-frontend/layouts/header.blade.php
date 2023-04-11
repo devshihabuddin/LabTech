@@ -6,6 +6,12 @@
       @foreach(\App\Models\Setting::all() as $setting)
         <a href="{{url('/')}}"><img src="/images/logo/{{$setting->image}}" alt="Lab Tech" ></a>
         @endforeach
+      </div><br>
+      <div class="sidebar-item search-form">
+         <form action="{{url('/search')}}" type="get" style="border-radius: 7px; padding: 3px 10px;">
+            <input type="search" name="query" placeholder="Search Product Here.." >
+            <button type="submit"><i class="bi bi-search"></i></button>
+          </form>
       </div>
 
       <nav id="navbar" class="navbar">

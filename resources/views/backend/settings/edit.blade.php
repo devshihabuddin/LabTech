@@ -51,8 +51,8 @@
                                     <input type="text" name="linkedin_url" placeholder=" linkedin_url" class="form-control" value="{{$setting->linkedin_url}}">
                                 </div>
                                 <div class="form-group">
-                                    <label>Instragram Url</label>
-                                    <input type="text" name="instragram_url" placeholder=" instragram_url" class="form-control" value="{{$setting->instragram_url}}">
+                                    <label>Youtube Url</label>
+                                    <input type="text" name="instragram_url" placeholder="Youtube_url" class="form-control" value="{{$setting->instragram_url}}">
                                 </div>
                               
                                 <br>

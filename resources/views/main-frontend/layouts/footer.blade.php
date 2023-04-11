@@ -56,7 +56,7 @@
             <div class="social-links mt-3">
               <a target="_blank" href="{{$setting->twitter_url}}" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a target="_blank" href="{{$setting->facebook_url}}" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a target="_blank" href="{{$setting->instragram_url}}" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a target="_blank" href="{{$setting->instragram_url}}" class="instagram"><i class="bx bxl-youtube"></i></a>
               <a target="_blank" href="{{$setting->linkedin_url}}" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
             @endforeach

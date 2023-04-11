@@ -42,7 +42,7 @@ class SettingsController extends Controller
        // dd($request->all());
        $this->validate($request,[
         'title'        => 'required',
-        'phone'        => 'required',
+        'phone'        => 'string|required',
         'email'        => 'required',
         'address'      => 'required',
         'image'        => 'required|image|mimes:jpeg,png,jpg',
@@ -109,7 +109,7 @@ class SettingsController extends Controller
         $settings = Setting::find($id);
         $this->validate($request,[
             'title'        => 'required',
-            'phone'        => 'required',
+            'phone'        => 'string|required',
             'email'        => 'required',
             'address'      => 'required',
             'image'        => 'nullable|image|mimes:jpeg,png,jpg',

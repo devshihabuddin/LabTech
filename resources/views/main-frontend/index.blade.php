@@ -83,9 +83,9 @@
     </section><!-- End Product Section -->
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" style="padding-top: 30px;">
       <div class="container">
-      <div class="section-title">
+      <div class="section-title mt-2">
           <h2>LabTech</h2>
         </div>
         @foreach($abouts as $about)

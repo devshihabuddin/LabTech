@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Phone Number</label>
-                                    <input type="number" name="phone" placeholder=" phone" class="form-control" required>
+                                    <input type="text" name="phone" placeholder=" phone" class="form-control" required>
                                 </div>
                                 <div class="form-group">
                                     <label>Address</label>
@@ -49,8 +49,8 @@
                                     <input type="text" name="linkedin_url" placeholder=" linkedin_url" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Instragram Url</label>
-                                    <input type="text" name="instragram_url" placeholder=" instragram_url" class="form-control">
+                                    <label>YouTube Url</label>
+                                    <input type="text" name="instragram_url" placeholder="YouTube_url" class="form-control">
                                 </div><br>
                                 <input type="submit" class="btn btn-primary" value="Submit">
                                 <button type="submit" class="btn btn-outline-secondary">Cancle</button>

@@ -27,12 +27,12 @@
             <div class="text-center">
               <div class="row">
               @foreach($tranings as $traning)
-                <div class="col-lg-12 col-md-6 mb-2">             
-                    <div class="card">
-                      <div>
+                <div class="col-lg-12 col-md-4 mb-3">             
+                    <div class="zoom">
+                      <div class="">
                         <img src="/images/traning/{{$traning->image}}" class="w-100" />
                       </div>
-                      <div class="card-body">
+                      <div class="card">
                         <h4><strong>{{$traning->title}} </strong><small>Traning</small></h4>
                         <h6 class=""><b>Description :</b> <span class="brand">{!! html_entity_decode($traning->description) !!}</span></h6>
                       </div>

@@ -110,7 +110,7 @@
       <div class="social-links d-none d-md-flex align-items-center">
         <a target="_blank" href="{{$setting->twitter_url}}" class="twitter"><i class="bi bi-twitter"></i></a>
         <a target="_blank" href="{{$setting->facebook_url}}" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a target="_blank" href="{{$setting->instragram_url}}" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a target="_blank" href="{{$setting->instragram_url}}" class="youtube"><i class="bi bi-youtube"></i></a>
         <a target="_blank" href="{{$setting->linkedin_url}}" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
