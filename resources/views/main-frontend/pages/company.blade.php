@@ -8,13 +8,20 @@
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
   <div class="container">
-
     <ol>
       <li><a href="index.html">Home</a></li>
       <li>company</li>
     </ol>
     <h2>Company</h2>
-
+    <div class="row">
+      <div class="col-lg-2">
+          <img src="/images/user/20230408004843.jpg" alt="img" style="height: 100px; width:100px">   
+      </div>
+      <div class="col-lg-10">
+        <h4>CEO Talks</h4>
+        <p>LabTech Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+      </div>         
+    </div>
   </div>
 </section><!-- End Breadcrumbs -->
 @foreach($abouts as $about)

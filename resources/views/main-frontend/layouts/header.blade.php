@@ -7,10 +7,10 @@
         <a href="{{url('/')}}"><img src="/images/logo/{{$setting->image}}" alt="Lab Tech" ></a>
         @endforeach
       </div><br>
-      <div class="sidebar-item search-form">
-         <form action="{{url('/search')}}" type="get" style="border-radius: 7px; padding: 3px 10px;">
-            <input type="search" name="query" placeholder="Search Product Here.." >
-            <button type="submit"><i class="bi bi-search"></i></button>
+      <div class="row m-2">
+         <form action="{{url('/search')}}" type="get" class="d-flex align-items-center" style="border-radius: 7px; padding: 3px 10px;">
+            <input type="search" name="query" class="form-control" placeholder="Search Product Here.." >
+            <button type="submit" class="btn btn-outline-primary">search</button>
           </form>
       </div>
 
@@ -20,7 +20,6 @@
           <li class="dropdown"><a href="#"><span>PRODUCTS</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
             @foreach(\App\Models\Category::all() as $cat)
-              <!-- <li><a href="#">dropdown</a></li> -->
               @php
                 $subcategories = DB::table('subcategories')->where('category_id',$cat->id)->get();
               @endphp

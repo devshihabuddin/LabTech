@@ -68,7 +68,7 @@
 
     <div class="container">
       <div class="credits">
-        Developed by <a href="http://shihabcse.intels.co/">Md.Shihab Uddin</a>
+        Developed by <a href="https://labtech-engineering.com/">LabTech Engineering</a>
       </div>
     </div>
   </footer><!-- End Footer -->

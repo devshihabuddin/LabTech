@@ -172,7 +172,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: #545454;
   white-space: nowrap;
   transition: 0.3s;
@@ -264,11 +264,11 @@ h6 {
 
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
-    left: -90%;
+    right: -90%;
   }
 
   .navbar .dropdown .dropdown:hover>ul {
-    left: -100%;
+    right: -100%;
   }
 }
 
