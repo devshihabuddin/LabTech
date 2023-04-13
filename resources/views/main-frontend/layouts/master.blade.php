@@ -91,6 +91,7 @@
 .product-slide .portfolio-description p {
   padding: 0;
 }
+
 </style>
 
 
