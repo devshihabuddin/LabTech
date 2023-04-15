@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 
-//------------------------------------Start Frontend Section----------------------------------//
+//--------------------------------------- Start Frontend Section -------------------------------------//
 
 //frontend dashboard/home
 Route::get('/', [FrontendController::class, 'index'])->name('/');
@@ -56,15 +56,17 @@ Route::resource('clientmessage', ClientMessageController::class);
 
 //Product page
 Route::get('/all-products', [ProductController::class, 'index'])->name('frontend.products');
+Route::get('/product-details/{slug}', [ProductController::class, 'productDetails'])->name('product.details');
 
 //search product
 Route::get('/search', [FrontendController::class, 'search']);
 //company controller
 Route::get('/company', [CompanyController::class, 'index'])->name('company');
-//--------------------------- End Frontend section---------------------------------------------//
+//--------------------------------------- End Frontend section ---------------------------------------------//
 
 
-//--------------------------- Start backend section---------------------------------------------//
+
+//--------------------------------------- Start backend section ---------------------------------------------//
 
 Auth::routes(['register'=>false]);
 
@@ -118,4 +120,5 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
     //user controller
     Route::resource('user', UserController::class);
 });
-//--------------------------- End backend section---------------------------------------------//
+
+//---------------------------------------- End backend section ---------------------------------------------//

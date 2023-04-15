@@ -63,15 +63,19 @@
                 <div class="swiper-slide">                
                   <div class="row">
                   @foreach($products as $product)
-                    <div class="col-md-3">
-                      <div class="card">
-                        <img class="card-img-top" src="/images/product/{{$product->image}}" style="height: 200px;" alt="Card image">
-                        <div class="card-body">
-                          <strong class="card-title">{{$product->title}}</strong>
+                    
+                      <div class="col-md-3">
+                      <a href="{{route('product.details',$product->slug)}}">
+                        <div class="card">
+                          <img class="card-img-top" src="/images/product/{{$product->image}}" style="height: 200px;" alt="Card image">
+                          <div class="card-body">
+                            <strong class="card-title">{{$product->title}}</strong>
+                          </div>
                         </div>
+                      </a>
                       </div>
-                    </div>
-                    @endforeach
+                    
+                  @endforeach
                   </div>                 
                 </div>
               </div>

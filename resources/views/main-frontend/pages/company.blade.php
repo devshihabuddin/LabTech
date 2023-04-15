@@ -13,7 +13,12 @@
       <li>company</li>
     </ol>
     <h2>Company</h2>
-    <div class="row">
+  </div>
+</section><!-- End Breadcrumbs -->
+@foreach($abouts as $about)
+<section id="about" class="about">
+  <div class="container">
+  <div class="row">
       <div class="col-lg-2">
           <img src="/images/user/20230408004843.jpg" alt="img" style="height: 100px; width:100px">   
       </div>
@@ -21,14 +26,14 @@
         <h4>CEO Talks</h4>
         <p>LabTech Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
       </div>         
-    </div>
+    </div> 
+
   </div>
-</section><!-- End Breadcrumbs -->
-@foreach($abouts as $about)
+</section><!-- End About Section -->
 <!-- ======= About Section ======= -->
 <section id="about" class="about">
   <div class="container">
-
+  
     <div class="row">
       <div class="col-lg-6">
         <img src="/images/{{$about->image}}" class="img-fluid" alt="">
