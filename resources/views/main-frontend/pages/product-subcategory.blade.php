@@ -60,8 +60,8 @@
           <div class="col-lg-4">
                 <div class="sidebar">
                 <div class="sidebar-item search-form">
-                    <form action="{{url('/search')}}" type="get" style="border-radius: 7px; padding: 3px 10px;">
-                      <input type="search" name="query" placeholder="Search Product Here.." class="form-control">
+                    <form action="{{url('/search')}}" type="get">
+                      <input type="search" name="query" placeholder="Search product Here.." class="form-control">
                       <button type="submit"><i class="bi bi-search"></i></button>
                     </form>
                   </div>
