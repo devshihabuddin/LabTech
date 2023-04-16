@@ -26,9 +26,11 @@
               @endphp
               <li class="dropdown"><a href="{{route('product.category',$cat->slug)}}"><span>{{strtoupper($cat->category_name)}}</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  @foreach($subcategories as $sub)
-                  <li><a href="{{route('product.subcategory',$sub->id)}}">{{strtoupper($sub->subcategory_name)}}</a></li>
-                  @endforeach
+                  @if(count($subcategories)>1)
+                    @foreach($subcategories as $sub)
+                    <li><a href="{{route('product.subcategory',$sub->id)}}">{{strtoupper($sub->subcategory_name)}}</a></li>
+                    @endforeach
+                  @endif
                 </ul>
               </li>
               @endforeach
