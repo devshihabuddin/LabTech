@@ -91,7 +91,7 @@
       </div>
     </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
+</main><!-- End #main -->
   <style>
     .contact iframe {
   border:0; 

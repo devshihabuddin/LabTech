@@ -11,7 +11,6 @@
       <div class="row m-2">
          <form action="{{url('/search')}}" type="get" class="d-flex align-items-center" style="border-radius: 7px; padding: 3px 20px;">
             <input type="search" name="query" class="form-control" placeholder="Search Product Here.." >
-
             <button type="submit" class="btn btn-outline-secondary">search</button>
           </form>
       </div>
