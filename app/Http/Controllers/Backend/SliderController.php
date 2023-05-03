@@ -49,7 +49,7 @@ class SliderController extends Controller
             $image->move($destinationPath, $profileImage);
             $data['image'] = "$profileImage";
         }
-        $data['slug']=$slug;
+        $data['slug']=date('YmdHis') . "-" .$slug;
         $slider = Slider::create($data);
        if($slider){
            
@@ -87,7 +87,7 @@ class SliderController extends Controller
         }else{
             unset($data['image']);
         }
-        $data['slug']=$slug;
+        $data['slug']=date('YmdHis') . "-" .$slug;
 
         $slider->update($data);
         return redirect()->route('sliders.index')->with('success','Slider updated successfully.');
