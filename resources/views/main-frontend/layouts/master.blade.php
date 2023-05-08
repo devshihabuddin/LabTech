@@ -24,6 +24,10 @@
   <link href="{{asset('main-frontend/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
   <link href="{{asset('main-frontend/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
+  <!-- owl-carosal css -->
+  <link href="{{asset('main-frontend/assets/css/owl.carousel.min.css')}}" rel="stylesheet">
+  <link href="{{asset('main-frontend/assets/css/owl.theme.default.min.css')}}" rel="stylesheet">
+
   <!-- Template Main CSS File -->
   <link href="{{asset('main-frontend/assets/css/style.css')}}" rel="stylesheet">
   <style>
@@ -888,14 +892,16 @@ color: #fff;
   <script src="{{asset('main-frontend/assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
   <script src="{{asset('main-frontend/assets/vendor/php-email-form/validate.js')}}"></script>
 
+  <!-- owl-carosol -->
+  <script src="{{asset('main-frontend/assets/js/jquery-3.6.4.min.js')}}"></script>
+  <script src="{{asset('main-frontend/assets/js/owl.carousel.min.js')}}"></script>
+
   <!-- Template Main JS File -->
   <script src="{{asset('main-frontend/assets/js/main.js')}}"></script>
   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   
-  <script>
-  /**
-   * product slide slider
-   */
+  <!-- <script>
+  
   new Swiper('.product-slide-slider', {
     speed: 400,
     loop: true,
@@ -910,6 +916,28 @@ color: #fff;
     }
   });
   new PureCounter();
+</script> -->
+<script>
+  /**
+   * product slide slider
+   */
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
 </script>
 @stack('js')
 </body>

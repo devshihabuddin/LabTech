@@ -56,29 +56,27 @@
           <div class="col-lg-12">
             <div class="product-slide-slider swiper">
             <div class="float-start">
-                <strong>Showing </strong> <span> 1- 4</span> <span> of </span> <span class="total-products"> <strong>{{\App\Models\Product::count()}}</strong> </span>
+                <strong>Showing </strong> <span> 4</span> <span> of </span> <span class="total-products"> <strong>{{\App\Models\Product::count()}}</strong> </span>
                 <span>results</span>
               </div>
               <div class="swiper-wrapper align-items-center">        
                 <div class="swiper-slide">                
                   <div class="row">
-                  @foreach($products as $product)
-                    
-                      <div class="col-md-3">
-                      <a href="{{route('product.details',$product->slug)}}">
-                        <div class="card">
-                          <img class="card-img-top" src="/images/product/{{$product->image}}" style="height: 200px;" alt="Card image">
-                          <div class="card-body">
-                            <strong class="card-title">{{$product->title}}</strong>
-                          </div>
-                        </div>
-                      </a>
-                      </div>
-                    
-                  @endforeach
+                    <div class="owl-carousel owl-theme">
+                      @foreach($products as $product)                      
+                          <div class="card">
+                            <a href="{{route('product.details',$product->slug)}}">
+                            <img class="card-img-top" src="/images/product/{{$product->image}}" style="height: 200px;" alt="Card image">
+                            <div class="card-body">
+                              <strong class="card-title">{{$product->title}}</strong>
+                            </div>
+                            </a>
+                          </div>       
+                      @endforeach
                   </div>                 
                 </div>
-              </div>
+                </div>
+              </div>           
               <div class="swiper-pagination"></div>
             </div>
           </div>
@@ -109,8 +107,7 @@
     <!-- End About Section -->
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients" style="background-color: #f3f3f3!important;
-  padding-top: 30px;">
+    <section id="clients" class="clients" style="background-color: #f3f3f3!important; padding-top: 30px;">
       <div class="container">
         <div class="section-title">
           <h2>Clients</h2>

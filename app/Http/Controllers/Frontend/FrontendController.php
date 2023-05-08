@@ -21,7 +21,7 @@ class FrontendController extends Controller
         $abouts     = About::latest()->get();
         $categories = Category::where(['status'=>'active'])->get();
         $clients    = Client::where(['status'=>'active'])->orderBy('id','DESC')->limit('5')->get();
-        $products = Product::latest()->limit('4')->get();
+        $products   = Product::latest()->get();
         
         return view('main-frontend.index',compact('abouts','categories','clients','products'));
     }
