@@ -17,7 +17,7 @@ class CompanyCEOController extends Controller
      */
     public function index()
     {
-        $ceotalks = CEOtalk::first();
+        $ceotalks = CEOtalk::all();
         return view('Backend.CEO.index',compact('ceotalks'));
     }
 
