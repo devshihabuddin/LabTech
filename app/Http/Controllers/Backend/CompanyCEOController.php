@@ -18,7 +18,7 @@ class CompanyCEOController extends Controller
     public function index()
     {
         $ceotalks = CEOtalk::all();
-        return view('Backend.CEO.index',compact('ceotalks'));
+        return view('backend.CEO.index',compact('ceotalks'));
     }
 
     /**
@@ -28,7 +28,7 @@ class CompanyCEOController extends Controller
      */
     public function create()
     {
-        return view('Backend.CEO.create');
+        return view('backend.CEO.create');
     }
 
     /**
@@ -54,7 +54,7 @@ class CompanyCEOController extends Controller
         $talks = CEOtalk::create($data);
        if($talks){
            
-           return redirect()->back()->with('success','Successfully Created');
+           return redirect()->route('ceotalks.index')->with('success','Successfully Created');
        }else{
            return back()->with('error','Something went wrong');
        }
@@ -80,7 +80,7 @@ class CompanyCEOController extends Controller
     public function edit($id)
     {
         $talks = CEOtalk::find($id);
-        return view('Backend.CEO.edit',compact('talks'));
+        return view('backend.CEO.edit',compact('talks'));
     }
 
     /**
