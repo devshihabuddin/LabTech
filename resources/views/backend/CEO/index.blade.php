@@ -29,7 +29,6 @@
                                         <tr>
                                             <th>SL No.</th>
                                             <th>Title</th>
-                                            <th>descreption</th>
                                             <th>Photo</th>
                                             <th>Action</th>
                                         </tr>
@@ -38,7 +37,6 @@
                                         <tr>
                                             <th>SL No.</th>
                                             <th>Title</th>
-                                            <th>descreption</th>
                                             <th>Photo</th>
                                             <th>Action</th>
                                         </tr>
@@ -48,7 +46,6 @@
                                         <tr>
                                             <td>{{$key + 1}}</td>
                                             <td>{{$data->title}}</td>
-                                            <td>{!! Str::limit($data->description,30,'...') !!}</td>
                                             <td><img src="/images/{{$data->image}}" style="max-width: 90px; max-height: 90px"></td>                                                    
                                             <td>
                                                 <a href="{{route('ceotalks.edit',$data->id)}}" data-toggle="tooltip" title="edit" class="btn btn-sm btn-outline-info"><i class="icon-note"></i></a>
