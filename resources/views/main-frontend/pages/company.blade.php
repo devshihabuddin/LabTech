@@ -15,22 +15,24 @@
     <h2>Company</h2>
   </div>
 </section><!-- End Breadcrumbs -->
-@foreach($abouts as $about)
+@foreach($ceotalks as $talks)
 <section id="about" class="about">
   <div class="container">
   <div class="row">
       <div class="col-lg-2">
-          <img src="/images/user/20230408004843.jpg" alt="img" style="height: 100px; width:100px">   
+          <img src="/images/{{$talks->image}}" alt="img" style="height: 100px; width:100px">   
       </div>
       <div class="col-lg-10">
-        <h4>CEO Talks</h4>
-        <p>LabTech Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+        <h4>{{$talks->title}}</h4>
+        <p>{!! html_entity_decode($talks->description) !!}</p>
       </div>         
     </div> 
 
   </div>
 </section><!-- End About Section -->
+@endforeach
 <!-- ======= About Section ======= -->
+@foreach($abouts as $about)
 <section id="about" class="about">
   <div class="container">
   

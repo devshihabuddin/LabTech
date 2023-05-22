@@ -86,8 +86,15 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="{{route('abouts.index')}}"><i class="icon-info"></i> <span>About Us</span></a>
+                                <a href="#App" class="has-arrow"><i class="icon-info"></i> <span>About Us</span></a>
+                                <ul>
+                                    <li><a href="{{route('abouts.index')}}">About Us</a></li>
+                                    <li><a href="{{route('ceotalks.index')}}">CEO Talks</a></li>
+                                </ul>
                             </li>
+                            <!-- <li>
+                                <a href="{{route('abouts.index')}}"><i class="icon-info"></i> <span>About Us</span></a>
+                            </li> -->
                             <li>
                                 <a href="#App" class="has-arrow"><i class="icon-user"></i> <span>General Setting</span></a>
                                 <ul>

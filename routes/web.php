@@ -3,6 +3,7 @@
 use App\Http\Controllers\Backend\AboutController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ClientController;
+use App\Http\Controllers\Backend\CompanyCEOController;
 use App\Http\Controllers\Backend\ContactPageController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\FooterContactController;
@@ -97,6 +98,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 
     //about controller section
     Route::resource('abouts', AboutController::class);
+    //CompanyCEO controller section
+    Route::resource('ceotalks', CompanyCEOController::class);
 
     //clients section
     Route::resource('clients', ClientController::class);
