@@ -5,7 +5,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">                        
-                        <h2><a href="javascript:void(0);" class="btn btn-xs btn-link btn-toggle-fullwidth"><i class="fa fa-arrow-left"></i></a> Slider List
+                        <h2><a href="javascript:void(0);" class="btn btn-xs btn-link btn-toggle-fullwidth"><i class="fa fa-arrow-left"></i></a> CEO-talks List
                         <a class="btn btn-sm btn-outline-secondary float-right" href="{{route('ceotalks.create')}}"><b>+Write ceotalks</b></a></h2>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{route('home')}}"><i class="icon-home"></i></a></li>                            
@@ -49,8 +49,7 @@
                                             <td>{{$key + 1}}</td>
                                             <td>{{$data->title}}</td>
                                             <td>{!! Str::limit($data->description,30,'...') !!}</td>
-                                            <td><img src="/images/{{$data->image}}" style="max-width: 90px; max-height: 90px"></td>          
-                                            
+                                            <td><img src="/images/{{$data->image}}" style="max-width: 90px; max-height: 90px"></td>                                                    
                                             <td>
                                                 <a href="{{route('ceotalks.edit',$data->id)}}" data-toggle="tooltip" title="edit" class="btn btn-sm btn-outline-info"><i class="icon-note"></i></a>
                                                 <button type="button" onclick="deleteCEO({{$data->id}})"  class="btn btn-sm btn-outline-danger"><i class="icon-trash"></i></button>
@@ -73,30 +72,6 @@
 @endsection
 
 @push('js')
-
-<script>
-    $('input[name=toogle]').change(function(){
-        var mode=$(this).prop('checked');
-        var id=$(this).val();
-       $.ajax({
-           url:"{{route('slider.status')}}",
-           type:'POST',
-           data:{
-               _token:'{{csrf_token()}}',
-               mode:mode,
-               id:id,
-           },
-           success:function(response){
-              if(response.status){
-                  alert(response.msg);
-              }else{
-                  alert('Please try again');
-              }
-           }
-
-       })
-    });
-</script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     function deleteCEO(id){
