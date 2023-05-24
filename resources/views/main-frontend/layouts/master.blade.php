@@ -30,7 +30,8 @@
 
   <!-- Template Main CSS File -->
   <link href="{{asset('main-frontend/assets/css/style.css')}}" rel="stylesheet">
-  <style>
+
+<style>
   /*--------------------------------------------------------------
 # Product Details
 --------------------------------------------------------------*/
@@ -145,12 +146,12 @@
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #e96b56;
+  color: #0aa33a;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #e96b56;
+  background: #0aa33a;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -196,7 +197,7 @@
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #e96b56;
+  color: #0aa33a;
 }
 
 .navbar .dropdown:hover>ul {
@@ -285,7 +286,7 @@
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #e96b56;
+  color: #0aa33a;
 }
 
 .navbar-mobile .getstarted,
@@ -320,7 +321,7 @@
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #e96b56;
+  color: #0aa33a;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -706,7 +707,7 @@ color: #fff;
 }
 
 .blog .sidebar .sidebar-title {
-  background-color: #e96b56;
+  background-color: #0aa33a;
   color: #fff;
   padding: 10px;
   font-size: 20px;
@@ -744,7 +745,7 @@ color: #fff;
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #e96b56;
+  background: #0aa33a;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -756,7 +757,7 @@ color: #fff;
 }
 
 .blog .sidebar .search-form form button:hover {
-  background: #eb7b68;
+  background: #58e886;;
 }
 
 .blog .sidebar .categories ul {
@@ -774,7 +775,7 @@ color: #fff;
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #e96b56;
+  color: #0aa33a;
 }
 
 .blog .sidebar .categories ul a span {
@@ -804,7 +805,7 @@ color: #fff;
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #e96b56;
+  color: #0aa33a;
 }
 
 .blog .sidebar .recent-posts time {

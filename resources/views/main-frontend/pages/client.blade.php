@@ -30,7 +30,7 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="{{url('/')}}">Home</a></li>
           <li>clients</li>
         </ol>
         <h2>Our CLients</h2>

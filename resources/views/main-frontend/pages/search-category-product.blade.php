@@ -6,7 +6,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="{{url('/')}}">Home</a></li>
           <li>products</li>
         </ol>
         <h2>Results for Products</h2>

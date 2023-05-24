@@ -5,7 +5,7 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="{{url('/')}}">Home</a></li>
           <li>Traning</li>
         </ol>
         <h2>Traning</h2>

@@ -52,7 +52,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="{{url('/')}}">Home</a></li>
           <li>gallery</li>
         </ol>
         <h2>Photo Gallery</h2>
