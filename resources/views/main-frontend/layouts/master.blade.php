@@ -402,10 +402,10 @@ section {
 /*--------------------------------------------------------------
 # Our Clients
 --------------------------------------------------------------*/
-/* #clients{
+#clients{
   background-color: #f3f3f3!important;
   padding-top: 30px;
-  } */
+  }
 
   .clients .swiper-pagination {
   margin-top: 20px;
@@ -1432,23 +1432,6 @@ color: #fff;
   <script src="{{asset('main-frontend/assets/js/main.js')}}"></script>
   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   
-  <!-- <script>
-  
-  new Swiper('.product-slide-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-  new PureCounter();
-</script> -->
 <script>
   /**
    * product slide slider
