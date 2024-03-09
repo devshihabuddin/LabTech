@@ -37,9 +37,10 @@
             <div class="text-center">
               <div class="row">
               @foreach($products as $product)
-                <div class="col-lg-4 col-md-6 mb-2">             
+                <div class="col-lg-4 col-md-6 mb-2">  
+                          
                     <div class="card">
-                      <div>
+                      <div> 
                         <img src="/images/product/{{$product->image}}" class="w-100" />
                       </div>
                       <div class="card-body">

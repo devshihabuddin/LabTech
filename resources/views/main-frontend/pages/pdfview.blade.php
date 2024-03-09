@@ -8,6 +8,7 @@
 </head>
 <body>
     <!-- ======= Contact Section ======= -->
+    
     <section id="contact" class="contact">
       <div class="container">
         <div class="row">
@@ -18,6 +19,7 @@
         </div>
       </div>
     </section><!-- End Contact Section -->
+    
 </body>
 </html>
 <style>
