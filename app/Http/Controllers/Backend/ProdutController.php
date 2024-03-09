@@ -64,6 +64,7 @@ class ProdutController extends Controller
         $data['model']          = $request->model;
         $data['made_by']        = $request->made_by;
         $data['brand']          = $request->brand;
+        $data['description']    = $request->description;
 
         if($image = $request->file('image')){
             $destinationPath = 'images/product/';
@@ -145,6 +146,7 @@ class ProdutController extends Controller
         $data['model']          = $request->model;
         $data['made_by']        = $request->made_by;
         $data['brand']          = $request->brand;
+        $data['description']    = $request->description;
 
         if($image = $request->file('image')){
             $destinationPath = 'images/product/';

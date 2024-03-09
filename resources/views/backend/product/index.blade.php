@@ -36,6 +36,7 @@
                                             <th>Model</th>
                                             <th>Made IN</th>
                                             <th>Photo</th>
+                                            <th>Description</th>
                                             <th>PDF File view</th>
                                             <th>PDF Download</th>
                                             <th>Action</th>
@@ -51,6 +52,7 @@
                                             <th>Model</th>
                                             <th>Made IN</th>
                                             <th>Photo</th>
+                                            <th>Description</th>
                                             <th>PDF File view</th>
                                             <th>PDF Download</th>
                                             <th>Action</th>
@@ -67,6 +69,7 @@
                                             <td>{{$data->model}}</td>
                                             <td>{{$data->made_by}}</td>
                                             <td><img src="/images/product/{{$data->image}}" style="max-width: 90px; max-height: 90px"></td>
+                                            <td>{{ Str::limit($data->description,50,'...')}}</td>
                                             <td><a href="{{url('/view',$data->id)}}">PDF view</a></td>
                                             <td><a href="{{url('/download',$data->file)}}">PDF download</a></td>          
           

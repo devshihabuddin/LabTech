@@ -60,6 +60,10 @@
                                     <label class="form-label">Image</label>
                                     <input type="file" class="form-control" name="image" class="form-control" required>
                                 </div>
+                                <div class="form-group">
+                                    <label>Description</label>
+                                    <textarea class="form-control" id="description" name="description" placeholder="write somthing..." rows="5" cols="30"></textarea>
+                                </div>
 
                                 <div class="form-group">
                                     <label class="form-label">PDF File</label>

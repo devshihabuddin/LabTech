@@ -17,7 +17,8 @@ class Product extends Model
         'brand',
         'made_by',
         'image',
-        'file'
+        'file',
+        'description'
     ];
 
     //__join with category__//

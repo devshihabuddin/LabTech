@@ -38,9 +38,9 @@
                 <div class="card">
                 
                   <div>
-                  
+                  <a href="{{route('product.details',$product->slug)}}">
                     <img  src="/images/product/{{$product->image}}" class="w-100 h-210" />
-                  
+                  </a>
                   </div>
                   <div class="card-body">
                     <h5><strong>{{$product->title}}</strong></h5>
@@ -79,8 +79,9 @@
             <div class="sidebar-item recent-posts">
               @foreach($latest_products as $product)
               <div class="post-item clearfix" class="entry-img">
+              <a href="{{route('product.details',$product->slug)}}">
                 <img src="/images/product/{{$product->image}}" alt="img" class="img-fluid">
-                <h4><a href="blog-single.html"><strong>{{$product->title}}</strong></a></h4>
+                <h4><a href="{{route('product.details',$product->slug)}}"><strong>{{$product->title}}</strong></a></h4>
               </div>
               @endforeach
             </div>

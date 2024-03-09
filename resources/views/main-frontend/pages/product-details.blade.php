@@ -17,29 +17,35 @@
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-lg-8 entries">
-            <div class="clearfix mb-3">
-              <!-- <div class="float-start">
-                  <strong>Showing </strong> <span> 1-9</span> <span> of </span> <span class="total-products"> 14 </span>
-                  <span>results</span>
-                </div> -->
-                
-            </div>
+            
             <div class="text-center">
               <div class="row">
               
                 <div class="col-lg-12 col-md-4 mb-3">             
-                    <div class="zoom">
+                    <div class="zoom card">
+                      <br>
                       <div class="">
-                        <img src="/images/product/{{$product->image}}" class="w-100" />
+                        <img src="/images/product/{{$product->image}}"  />
                       </div>
-                      <div class="card">
-                        <h4><strong>Name : </strong> {{$product->title}}</h4>
-                        <h4><strong>Brand:</strong> {{$product->brand}}</h4>
-                        <h4><strong>Model:</strong> {{$product->model}}</h4>
-                        <h4><strong>{{$product->made_by}} </strong></h4>
-                        <button class="btn btn-sm btn-primary"><a target="_blank" href="{{url('/view',$product->id)}}">View Description</a></button>
-                      </div>
-                    </div>                   
+                      
+                      <h1><strong>{{$product->title}}</strong></h1>
+                      
+                      
+                      <p class="card-text text-center">Description: {!! html_entity_decode($product->description) !!}</p>
+                      <!-- <h4><strong>Description:</strong>{!! html_entity_decode($product->description) !!}</h4> -->
+                      
+                      <hr>
+                        <h4>Brand:{{$product->brand}}</h4>
+                        <hr>
+                        <h4>Model:{{$product->model}}</h4>
+                        <hr>
+                        <h4>{{$product->made_by}}</h4>
+                        
+                        </div>
+                        <button class="btn btn-sm btn-success"><a target="_blank" href="{{url('/view',$product->id)}}">Catalog</a></button>
+                        
+                      
+                   
                 </div>                             
               </div>                         
             </div>              
@@ -68,8 +74,9 @@
                     <div class="sidebar-item recent-posts">
                         @foreach($latest_products as $product)
                         <div class="post-item clearfix" class="entry-img">
+                        <a href="{{route('product.details',$product->slug)}}">
                         <img src="/images/product/{{$product->image}}" alt="img" class="img-fluid">
-                        <h4><a href="blog-single.html">{{$product->title}}</a></h4>
+                        <h4><a href="{{route('product.details',$product->slug)}}">{{$product->title}}</a></h4>
                         </div>
                         @endforeach
                     </div>
