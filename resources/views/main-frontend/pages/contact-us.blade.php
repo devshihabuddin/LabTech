@@ -58,7 +58,7 @@
 
         <div class="row">
           <div class="col-lg-6 ">
-            <iframe class="contact iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" 
+            <iframe class="contact iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.626898955983!2d90.36124707602394!3d23.796296887011554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0c50fe97f43%3A0x4ab1ba7bdec4093f!2zMjQ2IFcgTW9uaXB1ciwg4Kai4Ka-4KaV4Ka-IDEyMTY!5e0!3m2!1sbn!2sbd!4v1711817715067!5m2!1sbn!2sbd" frameborder="0" 
             ></iframe>
           </div>
           @endforeach
